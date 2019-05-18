@@ -49,12 +49,14 @@ def load_files():
                 with open(os.path.join(directories, file_name), encoding="latin-1") as f:
                     email = f.read()
                     ham_list.append(email)
+                    print ("ham list complete")
 
         if (os.path.split(directories)[1]  == 'spam'):
             for file_name in files:
                 with open(os.path.join(directories, file_name), encoding="latin-1") as f:
                     email = f.read()
                     spam_list.append(email)
+                    print ("spam list complete")
 
                     
     return ham_list, spam_list
