@@ -2,9 +2,24 @@ Email Spam Detection
 ==============================
 Email Spam Detection using Machine learning, Flask and Heroku 
 
-Heroku app deployed at https://email-abuse-detection.herokuapp.com/
+Heroku app deployed is at https://email-abuse-detection.herokuapp.com/
 
 Please extract following folders: Enron1, Enron2, Enron3, Enron4 ,Enron5, Enron6 in data/processed to train the model. 
+
+Sample output:
+
+➜  protonmail_spam git:(master) ✗ python app.py
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 972-451-267
+Predict and Train
+Generating spam and ham list
+Naive Bays and wordbag
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)
+f1_score:
+0.9814601259646945
+
 
 Project Organization
 ------------
@@ -17,7 +32,7 @@ Project Organization
     │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
-    ├── notebooks          <- Jupyter notebook
+    ├── notebooks          <- Jupyter notebook with scores and analysis
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`
     │
