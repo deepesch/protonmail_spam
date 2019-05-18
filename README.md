@@ -7,7 +7,7 @@ Heroku app deployed is at https://email-abuse-detection.herokuapp.com/
 Please extract following folders: Enron1, Enron2, Enron3, Enron4 ,Enron5, Enron6 in data/processed to train the model. 
 
 Sample training output:
-'''
+'''python
 ➜  protonmail_spam git:(master) ✗ python app.py
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
  * Restarting with stat
